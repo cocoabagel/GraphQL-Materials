@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		5583875D2463830A00508A06 /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5583875B2463830A00508A06 /* Queries.graphql */; };
 		558387732463867C00508A06 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558387722463867C00508A06 /* FilmsViewController.swift */; };
 		558387842463B27B00508A06 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558387832463B27B00508A06 /* API.swift */; };
+		AA3727AA2A0BF2BF00BEB082 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = AA3727A92A0BF2BF00BEB082 /* Apollo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3727AA2A0BF2BF00BEB082 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +142,7 @@
 			);
 			name = "Jedi Archives";
 			packageProductDependencies = (
+				AA3727A92A0BF2BF00BEB082 /* Apollo */,
 			);
 			productName = MyRWTutorial;
 			productReference = 185CB1F823C78CE6009F7571 /* Jedi Archives.app */;
@@ -170,6 +173,7 @@
 			);
 			mainGroup = 185CB1EF23C78CE6009F7571;
 			packageReferences = (
+				AA3727A82A0BF2BF00BEB082 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = 185CB1F923C78CE6009F7571 /* Products */;
 			projectDirPath = "";
@@ -414,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA3727A82A0BF2BF00BEB082 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA3727A92A0BF2BF00BEB082 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA3727A82A0BF2BF00BEB082 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 185CB1F023C78CE6009F7571 /* Project object */;
 }
