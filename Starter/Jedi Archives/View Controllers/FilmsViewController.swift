@@ -36,7 +36,13 @@ class FilmsViewController: UITableViewController {
     var films: [AllFilmsQuery.Data.AllFilm.Film] = []
     
     @IBSegueAction func showFilmDetails(_ coder: NSCoder, sender: Any?) -> FilmDetailsViewController? {
-        return nil
+        guard
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell)
+        else {
+            return nil
+        }
+        return FilmDetailsViewController(film: films[indexPath.row], coder: coder)
     }
     
     override func viewDidLoad() {

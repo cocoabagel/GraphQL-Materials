@@ -33,14 +33,14 @@
 import UIKit
 
 class FilmDetailsViewController: UITableViewController {
-    private let film: String
+    private let film: AllFilmsQuery.Data.AllFilm.Film
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) is not implemented")
     }
     
     
-    init?(film: String, coder: NSCoder) {
+    init?(film: AllFilmsQuery.Data.AllFilm.Film, coder: NSCoder) {
         self.film = film
         
         super.init(coder: coder)
@@ -52,6 +52,8 @@ class FilmDetailsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        title = film.title
     }
 }
 
@@ -67,10 +69,15 @@ extension FilmDetailsViewController {
             
             if indexPath.row == 0 {
                 cell.textLabel?.text = "Episode"
+                if let episodeNumber = film.episodeId {
+                    cell.detailTextLabel?.text = "\(episodeNumber)"
+                }
             } else if indexPath.row == 1 {
                 cell.textLabel?.text = "Released"
+                cell.detailTextLabel?.text = film.releaseDate
             } else if indexPath.row == 2 {
                 cell.textLabel?.text = "Director"
+                cell.detailTextLabel?.text = film.director
             }
             
             return cell
@@ -85,7 +92,7 @@ extension FilmDetailsViewController {
         if section == 0 {
             return 3
         }
-        return 0
+        return film.characterConnection?.characters?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
