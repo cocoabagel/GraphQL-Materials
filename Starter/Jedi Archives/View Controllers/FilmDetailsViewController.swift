@@ -47,7 +47,15 @@ class FilmDetailsViewController: UITableViewController {
     }
     
     @IBSegueAction func showCharacterDetails(_ coder: NSCoder, sender: Any?) -> CharacterDetailsViewController? {
-        return nil
+        guard
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell),
+            let character = film.characterConnection?.characters?[indexPath.row]
+        else {
+            return nil
+        }
+
+        return CharacterDetailsViewController(character: character, coder: coder)
     }
     
     override func viewDidLoad() {

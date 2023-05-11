@@ -33,13 +33,13 @@
 import UIKit
 
 class CharacterDetailsViewController: UITableViewController {
-    private let character: String
+    private let character: AllFilmsQuery.Data.AllFilm.Film.CharacterConnection.Character
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) is not implemented")
     }
 
-    init?(character: String, coder: NSCoder) {
+    init?(character: AllFilmsQuery.Data.AllFilm.Film.CharacterConnection.Character, coder: NSCoder) {
         self.character = character
 
         super.init(coder: coder)
@@ -47,6 +47,8 @@ class CharacterDetailsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        title = character.name
     }
 }
 
@@ -57,12 +59,16 @@ extension CharacterDetailsViewController {
 
         if indexPath.row == 0 {
             cell.textLabel?.text = "Birth Year"
+            cell.detailTextLabel?.text = character.birthYear
         } else if indexPath.row == 1 {
             cell.textLabel?.text = "Eye Color"
+            cell.detailTextLabel?.text = character.eyeColor
         } else if indexPath.row == 2 {
             cell.textLabel?.text = "Hair Color"
+            cell.detailTextLabel?.text = character.hairColor
         } else if indexPath.row == 3 {
             cell.textLabel?.text = "Home Planet"
+            cell.detailTextLabel?.text = character.homeworld?.name
         }
 
         return cell
