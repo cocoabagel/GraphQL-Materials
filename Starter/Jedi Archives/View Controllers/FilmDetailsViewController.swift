@@ -84,7 +84,8 @@ extension FilmDetailsViewController {
         }
         // swiftlint:disable:next force_unwrapping
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell")!
-        
+        cell.textLabel?.text = film.characterConnection?.characters?[indexPath.row]?.name
+
         return cell
     }
     
