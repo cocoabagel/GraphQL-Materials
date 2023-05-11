@@ -33,7 +33,7 @@
 import UIKit
 
 class FilmsViewController: UITableViewController {
-    var films: [String] = []
+    var films: [AllFilmsQuery.Data.AllFilm.Film] = []
     
     @IBSegueAction func showFilmDetails(_ coder: NSCoder, sender: Any?) -> FilmDetailsViewController? {
         return nil
@@ -48,6 +48,18 @@ class FilmsViewController: UITableViewController {
 
 extension FilmsViewController {
     func loadData() {
+        let query = AllFilmsQuery()
+        Apollo.shared.client.fetch(query: query) { result in
+            switch result {
+            case .success(let graphQLResult):
+                if let films = graphQLResult.data?.allFilms?.films?.compactMap({ $0 }) {
+                    self.films = films
+                    self.tableView.reloadData()
+                }
+            case .failure(let error):
+                print("Error loading data \(error)")
+            }
+        }
     }
 }
 
@@ -55,7 +67,8 @@ extension FilmsViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // swiftlint:disable:next force_unwrapping
         let cell = tableView.dequeueReusableCell(withIdentifier: "FilmCell")!
-        
+        let film = films[indexPath.row]
+        cell.textLabel?.text = film.title
         return cell
     }
     
