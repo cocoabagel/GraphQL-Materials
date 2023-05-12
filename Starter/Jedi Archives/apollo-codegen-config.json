@@ -9,7 +9,7 @@
       "none" : {}
     },
     "schemaTypes" : {
-      "path" : "./JediArchives",
+      "path" : "./GraphQL",
       "moduleType" : {
         "other" : {}
       }
