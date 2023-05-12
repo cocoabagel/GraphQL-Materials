@@ -18,6 +18,20 @@
 		5583875D2463830A00508A06 /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5583875B2463830A00508A06 /* Queries.graphql */; };
 		558387732463867C00508A06 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558387722463867C00508A06 /* FilmsViewController.swift */; };
 		AA3727AA2A0BF2BF00BEB082 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = AA3727A92A0BF2BF00BEB082 /* Apollo */; };
+		AAB1D2612A0E2C8F00A6E2C3 /* Species.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D2502A0E2C8F00A6E2C3 /* Species.graphql.swift */; };
+		AAB1D2622A0E2C8F00A6E2C3 /* FilmCharactersConnection.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D2512A0E2C8F00A6E2C3 /* FilmCharactersConnection.graphql.swift */; };
+		AAB1D2632A0E2C8F00A6E2C3 /* Person.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D2522A0E2C8F00A6E2C3 /* Person.graphql.swift */; };
+		AAB1D2642A0E2C8F00A6E2C3 /* Root.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D2532A0E2C8F00A6E2C3 /* Root.graphql.swift */; };
+		AAB1D2652A0E2C8F00A6E2C3 /* FilmsConnection.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D2542A0E2C8F00A6E2C3 /* FilmsConnection.graphql.swift */; };
+		AAB1D2662A0E2C8F00A6E2C3 /* Starship.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D2552A0E2C8F00A6E2C3 /* Starship.graphql.swift */; };
+		AAB1D2672A0E2C8F00A6E2C3 /* Planet.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D2562A0E2C8F00A6E2C3 /* Planet.graphql.swift */; };
+		AAB1D2682A0E2C8F00A6E2C3 /* Vehicle.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D2572A0E2C8F00A6E2C3 /* Vehicle.graphql.swift */; };
+		AAB1D2692A0E2C8F00A6E2C3 /* Film.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D2582A0E2C8F00A6E2C3 /* Film.graphql.swift */; };
+		AAB1D26A2A0E2C8F00A6E2C3 /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D2592A0E2C8F00A6E2C3 /* SchemaConfiguration.swift */; };
+		AAB1D26B2A0E2C8F00A6E2C3 /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D25A2A0E2C8F00A6E2C3 /* SchemaMetadata.graphql.swift */; };
+		AAB1D26C2A0E2C8F00A6E2C3 /* Node.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D25C2A0E2C8F00A6E2C3 /* Node.graphql.swift */; };
+		AAB1D26D2A0E2C8F00A6E2C3 /* AllFilmsQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D25F2A0E2C8F00A6E2C3 /* AllFilmsQuery.graphql.swift */; };
+		AAB1D26E2A0E2C8F00A6E2C3 /* StarWarsAPI.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1D2602A0E2C8F00A6E2C3 /* StarWarsAPI.graphql.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +47,20 @@
 		5583875A2463830A00508A06 /* Apollo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 		5583875B2463830A00508A06 /* Queries.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		558387722463867C00508A06 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
+		AAB1D2502A0E2C8F00A6E2C3 /* Species.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Species.graphql.swift; sourceTree = "<group>"; };
+		AAB1D2512A0E2C8F00A6E2C3 /* FilmCharactersConnection.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmCharactersConnection.graphql.swift; sourceTree = "<group>"; };
+		AAB1D2522A0E2C8F00A6E2C3 /* Person.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.graphql.swift; sourceTree = "<group>"; };
+		AAB1D2532A0E2C8F00A6E2C3 /* Root.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Root.graphql.swift; sourceTree = "<group>"; };
+		AAB1D2542A0E2C8F00A6E2C3 /* FilmsConnection.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmsConnection.graphql.swift; sourceTree = "<group>"; };
+		AAB1D2552A0E2C8F00A6E2C3 /* Starship.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Starship.graphql.swift; sourceTree = "<group>"; };
+		AAB1D2562A0E2C8F00A6E2C3 /* Planet.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.graphql.swift; sourceTree = "<group>"; };
+		AAB1D2572A0E2C8F00A6E2C3 /* Vehicle.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.graphql.swift; sourceTree = "<group>"; };
+		AAB1D2582A0E2C8F00A6E2C3 /* Film.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.graphql.swift; sourceTree = "<group>"; };
+		AAB1D2592A0E2C8F00A6E2C3 /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		AAB1D25A2A0E2C8F00A6E2C3 /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
+		AAB1D25C2A0E2C8F00A6E2C3 /* Node.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.graphql.swift; sourceTree = "<group>"; };
+		AAB1D25F2A0E2C8F00A6E2C3 /* AllFilmsQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllFilmsQuery.graphql.swift; sourceTree = "<group>"; };
+		AAB1D2602A0E2C8F00A6E2C3 /* StarWarsAPI.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsAPI.graphql.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +135,9 @@
 		55838758246382E200508A06 /* GraphQL */ = {
 			isa = PBXGroup;
 			children = (
+				AAB1D25D2A0E2C8F00A6E2C3 /* Operations */,
+				AAB1D24E2A0E2C8F00A6E2C3 /* Schema */,
+				AAB1D2602A0E2C8F00A6E2C3 /* StarWarsAPI.graphql.swift */,
 				5583875A2463830A00508A06 /* Apollo.swift */,
 				5583875B2463830A00508A06 /* Queries.graphql */,
 			);
@@ -119,6 +150,57 @@
 				185CB20923C78CE8009F7571 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAB1D24E2A0E2C8F00A6E2C3 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1D24F2A0E2C8F00A6E2C3 /* Objects */,
+				AAB1D2592A0E2C8F00A6E2C3 /* SchemaConfiguration.swift */,
+				AAB1D25A2A0E2C8F00A6E2C3 /* SchemaMetadata.graphql.swift */,
+				AAB1D25B2A0E2C8F00A6E2C3 /* Interfaces */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		AAB1D24F2A0E2C8F00A6E2C3 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1D2502A0E2C8F00A6E2C3 /* Species.graphql.swift */,
+				AAB1D2512A0E2C8F00A6E2C3 /* FilmCharactersConnection.graphql.swift */,
+				AAB1D2522A0E2C8F00A6E2C3 /* Person.graphql.swift */,
+				AAB1D2532A0E2C8F00A6E2C3 /* Root.graphql.swift */,
+				AAB1D2542A0E2C8F00A6E2C3 /* FilmsConnection.graphql.swift */,
+				AAB1D2552A0E2C8F00A6E2C3 /* Starship.graphql.swift */,
+				AAB1D2562A0E2C8F00A6E2C3 /* Planet.graphql.swift */,
+				AAB1D2572A0E2C8F00A6E2C3 /* Vehicle.graphql.swift */,
+				AAB1D2582A0E2C8F00A6E2C3 /* Film.graphql.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		AAB1D25B2A0E2C8F00A6E2C3 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1D25C2A0E2C8F00A6E2C3 /* Node.graphql.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		AAB1D25D2A0E2C8F00A6E2C3 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1D25E2A0E2C8F00A6E2C3 /* Queries */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		AAB1D25E2A0E2C8F00A6E2C3 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1D25F2A0E2C8F00A6E2C3 /* AllFilmsQuery.graphql.swift */,
+			);
+			path = Queries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +304,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				551DDCC72474C68F008DF2D2 /* CharacterDetailsViewController.swift in Sources */,
+				AAB1D2612A0E2C8F00A6E2C3 /* Species.graphql.swift in Sources */,
 				185CB1FC23C78CE6009F7571 /* AppDelegate.swift in Sources */,
+				AAB1D2672A0E2C8F00A6E2C3 /* Planet.graphql.swift in Sources */,
+				AAB1D2632A0E2C8F00A6E2C3 /* Person.graphql.swift in Sources */,
+				AAB1D2662A0E2C8F00A6E2C3 /* Starship.graphql.swift in Sources */,
+				AAB1D2642A0E2C8F00A6E2C3 /* Root.graphql.swift in Sources */,
 				5583875C2463830A00508A06 /* Apollo.swift in Sources */,
+				AAB1D26C2A0E2C8F00A6E2C3 /* Node.graphql.swift in Sources */,
 				558387732463867C00508A06 /* FilmsViewController.swift in Sources */,
+				AAB1D26D2A0E2C8F00A6E2C3 /* AllFilmsQuery.graphql.swift in Sources */,
+				AAB1D2682A0E2C8F00A6E2C3 /* Vehicle.graphql.swift in Sources */,
 				551DDCC52474C219008DF2D2 /* FilmDetailsViewController.swift in Sources */,
+				AAB1D26B2A0E2C8F00A6E2C3 /* SchemaMetadata.graphql.swift in Sources */,
+				AAB1D26E2A0E2C8F00A6E2C3 /* StarWarsAPI.graphql.swift in Sources */,
+				AAB1D2622A0E2C8F00A6E2C3 /* FilmCharactersConnection.graphql.swift in Sources */,
+				AAB1D2652A0E2C8F00A6E2C3 /* FilmsConnection.graphql.swift in Sources */,
+				AAB1D26A2A0E2C8F00A6E2C3 /* SchemaConfiguration.swift in Sources */,
+				AAB1D2692A0E2C8F00A6E2C3 /* Film.graphql.swift in Sources */,
 				185CB1FE23C78CE6009F7571 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

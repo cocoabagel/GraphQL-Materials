@@ -1,5 +1,5 @@
 {
-  "schemaNamespace" : "JediArchives",
+  "schemaNamespace" : "StarWarsAPI",
   "input" : {
     "operationSearchPaths" : ["**/*.graphql"],
     "schemaSearchPaths" : ["schema.json"]
@@ -11,7 +11,9 @@
     "schemaTypes" : {
       "path" : "./GraphQL",
       "moduleType" : {
-        "other" : {}
+        "embeddedInTarget" : {
+          "name": "JediArchives"
+        }
       }
     },
     "operations" : {

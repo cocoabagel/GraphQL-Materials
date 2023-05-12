@@ -33,14 +33,14 @@
 import UIKit
 
 class FilmDetailsViewController: UITableViewController {
-    private let film: AllFilmsQuery.Data.AllFilm.Film
+    private let film: StarWarsAPI.AllFilmsQuery.Data.AllFilms.Film
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) is not implemented")
     }
     
     
-    init?(film: AllFilmsQuery.Data.AllFilm.Film, coder: NSCoder) {
+    init?(film: StarWarsAPI.AllFilmsQuery.Data.AllFilms.Film, coder: NSCoder) {
         self.film = film
         
         super.init(coder: coder)
@@ -77,7 +77,7 @@ extension FilmDetailsViewController {
             
             if indexPath.row == 0 {
                 cell.textLabel?.text = "Episode"
-                if let episodeNumber = film.episodeId {
+                if let episodeNumber = film.episodeID {
                     cell.detailTextLabel?.text = "\(episodeNumber)"
                 }
             } else if indexPath.row == 1 {

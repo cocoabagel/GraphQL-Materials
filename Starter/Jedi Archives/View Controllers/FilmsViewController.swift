@@ -33,7 +33,7 @@
 import UIKit
 
 class FilmsViewController: UITableViewController {
-    var films: [AllFilmsQuery.Data.AllFilm.Film] = []
+    var films: [StarWarsAPI.AllFilmsQuery.Data.AllFilms.Film] = []
     
     @IBSegueAction func showFilmDetails(_ coder: NSCoder, sender: Any?) -> FilmDetailsViewController? {
         guard
@@ -54,7 +54,7 @@ class FilmsViewController: UITableViewController {
 
 extension FilmsViewController {
     func loadData() {
-        let query = AllFilmsQuery()
+        let query = StarWarsAPI.AllFilmsQuery()
         Apollo.shared.client.fetch(query: query) { result in
             switch result {
             case .success(let graphQLResult):

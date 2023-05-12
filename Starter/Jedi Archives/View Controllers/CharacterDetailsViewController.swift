@@ -33,13 +33,13 @@
 import UIKit
 
 class CharacterDetailsViewController: UITableViewController {
-    private let character: AllFilmsQuery.Data.AllFilm.Film.CharacterConnection.Character
+    private let character: StarWarsAPI.AllFilmsQuery.Data.AllFilms.Film.CharacterConnection.Character
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) is not implemented")
     }
 
-    init?(character: AllFilmsQuery.Data.AllFilm.Film.CharacterConnection.Character, coder: NSCoder) {
+    init?(character: StarWarsAPI.AllFilmsQuery.Data.AllFilms.Film.CharacterConnection.Character, coder: NSCoder) {
         self.character = character
 
         super.init(coder: coder)
