@@ -1,0 +1,21 @@
+{
+  "schemaNamespace" : "JediArchives",
+  "input" : {
+    "operationSearchPaths" : ["**/*.graphql"],
+    "schemaSearchPaths" : ["schema.json"]
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {}
+    },
+    "schemaTypes" : {
+      "path" : "./JediArchives",
+      "moduleType" : {
+        "other" : {}
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {}
+    }
+  }
+}
