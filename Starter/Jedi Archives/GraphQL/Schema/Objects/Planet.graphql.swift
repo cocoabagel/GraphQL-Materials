@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-public extension StarWarsAPI.Objects {
+extension StarWarsAPI.Objects {
   /// A large mass, planet or planetoid in the Star Wars Universe, at the time of
   /// 0 ABY.
   static let Planet = Object(

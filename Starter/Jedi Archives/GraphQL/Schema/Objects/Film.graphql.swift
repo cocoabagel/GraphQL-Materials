@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-public extension StarWarsAPI.Objects {
+extension StarWarsAPI.Objects {
   /// A single film.
   static let Film = Object(
     typename: "Film",

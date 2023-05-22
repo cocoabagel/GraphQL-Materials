@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-public extension StarWarsAPI.Objects {
+extension StarWarsAPI.Objects {
   /// An individual person or character within the Star Wars universe.
   static let Person = Object(
     typename: "Person",

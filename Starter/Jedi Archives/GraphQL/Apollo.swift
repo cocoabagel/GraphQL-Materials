@@ -37,6 +37,6 @@ class Apollo {
     let client: ApolloClient
 
     init() {
-        client = ApolloClient(url: URL(string: "http://localhost:58118")!)
+        client = ApolloClient(url: URL(string: "http://localhost:53940")!)
     }
 }

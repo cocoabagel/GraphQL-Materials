@@ -3,7 +3,7 @@
 
 import ApolloAPI
 
-public extension StarWarsAPI.Objects {
+extension StarWarsAPI.Objects {
   /// A single transport craft that has hyperdrive capability.
   static let Starship = Object(
     typename: "Starship",

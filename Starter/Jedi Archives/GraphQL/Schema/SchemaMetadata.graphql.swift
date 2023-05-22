@@ -3,19 +3,19 @@
 
 import ApolloAPI
 
-public protocol StarWarsAPI_SelectionSet: ApolloAPI.SelectionSet & ApolloAPI.RootSelectionSet
+protocol StarWarsAPI_SelectionSet: ApolloAPI.SelectionSet & ApolloAPI.RootSelectionSet
 where Schema == StarWarsAPI.SchemaMetadata {}
 
-public protocol StarWarsAPI_InlineFragment: ApolloAPI.SelectionSet & ApolloAPI.InlineFragment
+protocol StarWarsAPI_InlineFragment: ApolloAPI.SelectionSet & ApolloAPI.InlineFragment
 where Schema == StarWarsAPI.SchemaMetadata {}
 
-public protocol StarWarsAPI_MutableSelectionSet: ApolloAPI.MutableRootSelectionSet
+protocol StarWarsAPI_MutableSelectionSet: ApolloAPI.MutableRootSelectionSet
 where Schema == StarWarsAPI.SchemaMetadata {}
 
-public protocol StarWarsAPI_MutableInlineFragment: ApolloAPI.MutableSelectionSet & ApolloAPI.InlineFragment
+protocol StarWarsAPI_MutableInlineFragment: ApolloAPI.MutableSelectionSet & ApolloAPI.InlineFragment
 where Schema == StarWarsAPI.SchemaMetadata {}
 
-public extension StarWarsAPI {
+extension StarWarsAPI {
   typealias ID = String
 
   typealias SelectionSet = StarWarsAPI_SelectionSet
@@ -27,9 +27,9 @@ public extension StarWarsAPI {
   typealias MutableInlineFragment = StarWarsAPI_MutableInlineFragment
 
   enum SchemaMetadata: ApolloAPI.SchemaMetadata {
-    public static let configuration: ApolloAPI.SchemaConfiguration.Type = SchemaConfiguration.self
+    static let configuration: ApolloAPI.SchemaConfiguration.Type = SchemaConfiguration.self
 
-    public static func objectType(forTypename typename: String) -> Object? {
+    static func objectType(forTypename typename: String) -> Object? {
       switch typename {
       case "Root": return StarWarsAPI.Objects.Root
       case "FilmsConnection": return StarWarsAPI.Objects.FilmsConnection
